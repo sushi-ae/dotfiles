@@ -15,7 +15,7 @@ But these are the dotfiles that I am going to be changing on a regular basis.
 | --------- | ------- |
 | wm        | awesomewm |
 | distro    | archlinux |
-| font      | victormono |
+| font      | furamono  |
 | terminal  | alacritty |
 | colorscheme| dark-decay |
 | key-daemon| sxhkd |
