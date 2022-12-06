@@ -1,0 +1,52 @@
+window:
+  title: terminal
+ 
+  opacity: 1
+
+  padding:
+    x: 40
+    y: 30
+
+  dimensions:
+    columns: 40
+    lines: 10
+
+font:
+  normal:
+    family: VictorMono Nerd Font
+    style: Medium
+
+  bold:
+    family: VictorMono Nerd Font
+    style: Bold
+
+  size: 9.0
+
+colors:
+  primary:
+    background: '#fefefe'
+    foreground: '#101010'
+  cursor:
+    text:   CellForeground
+    cursor: '#101010'
+  bright:
+    black:   '#384148'
+    red:     '#fc7b81'
+    green:   '#94f7c5'
+    yellow:  '#ffeba6'
+    blue:    '#8cc1ff'
+    magenta: '#e2a6ff'
+    cyan:    '#90daff'
+    white:   '#fafdff'
+  normal:
+    black:   '#1c252c'
+    red:     '#e05f65'
+    green:   '#78dba9'
+    yellow:  '#f1cf8a'
+    blue:    '#70a5eb'
+    magenta: '#c68aee'
+    cyan:    '#74bee9'
+    white:   '#dee1e6'
+
+cursor:
+  style: Beam

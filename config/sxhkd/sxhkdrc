@@ -1,0 +1,11 @@
+# browser
+super + w
+	chromium
+
+# file manager
+super + e
+	pcmanfm
+
+# screenshot
+super + ctrl + c
+	scrot
