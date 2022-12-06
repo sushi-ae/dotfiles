@@ -1,1 +1,1 @@
-PS1="%F{blue}%n%F{reset} %~ "
+PS1="%F{red}%~%F{fg} $ "
