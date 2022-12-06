@@ -10,10 +10,11 @@ These are my dotfiles that are constantly being updated, unlike "wood." which is
 But these are the dotfiles that I am going to be changing on a regular basis.
 
 ## some information
-| Info |    =    |
-| ---- | ------- |
-|  wm  | awesomewm |
-|  os  | archlinux |
-| font | victormono |
-| term | alacritty |
-|colors| dark-decay |
+| Info      |    =    |
+| --------- | ------- |
+| wm        | awesomewm |
+| distro    | archlinux |
+| font      | victormono |
+| terminal  | alacritty |
+| colorscheme| dark-decay |
+| key-daemon| sxhkd |
