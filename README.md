@@ -15,5 +15,5 @@ But these are the dotfiles that I am going to be changing on a regular basis.
 | distro    | archlinux |
 | font      | furamono  |
 | terminal  | alacritty |
-| colorscheme| dark-decay |
+| colorscheme| mist |
 | key-daemon| sxhkd |
