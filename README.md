@@ -1,10 +1,8 @@
 # My Personal Dotfiles.
 ITS MESSY DON'T BULLY ME!!!
-## light theme
-![light](https://user-images.githubusercontent.com/118438453/205805655-4e9aeb92-5106-47e3-8493-f00e100bd68c.png)
-
-## dark theme
-![dark](https://user-images.githubusercontent.com/118438453/205805608-7440c989-7e37-4b0f-94f1-5cf489852dad.png)
+## current state of the rice
+### snowy.
+![snowy](https://user-images.githubusercontent.com/118438453/206122876-ecd569cb-78ac-45ca-add5-f9ad617f0cf6.png)
 
 ## description
 These are my dotfiles that are constantly being updated, unlike "wood." which is a static rice, meaning I won't change it much.
