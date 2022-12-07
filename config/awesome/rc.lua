@@ -180,8 +180,6 @@ awful.screen.connect_for_each_screen(function(s)
         filter  = awful.widget.tasklist.filter.currenttags,
         buttons = tasklist_buttons
     }
-
---local wb = awful.wibar { position = "top", height = 40 }
 end)
 -- }}}
 
@@ -495,23 +493,23 @@ client.connect_signal("request::titlebars", function(c)
         end)
     )
 
-    awful.titlebar(c, {size = 37}) : setup {
+    awful.titlebar(c, {size = 40}) : setup {
         { -- Left
             buttons = buttons,
             layout  = wibox.layout.fixed.horizontal
         },
         { -- Middle
-	    {
+	    --{
 	        align = "center",
-	        widget = awful.titlebar.widget.titlewidget(c)
-            },
+	        --widget = awful.titlebar.widget.titlewidget(c)
+            --},
 	    buttons = buttons,
             layout  = wibox.layout.flex.horizontal
         },
         { -- Right
             --awful.titlebar.widget.maximizedbutton(c),
             --awful.titlebar.widget.ontopbutton    (c),
-            --awful.titlebar.widget.closebutton    (c),
+            awful.titlebar.widget.closebutton    (c),
 	    buttons = buttons,
             layout = wibox.layout.fixed.horizontal()
         },

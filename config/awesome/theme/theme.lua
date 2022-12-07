@@ -11,7 +11,7 @@ local themes_path = gfs.get_configuration_dir() .. "theme/"
 
 local theme = {}
 
-theme.font          = "FuraMono Nerd Font Medium 11"
+theme.font          = "VictorMono Nerd Font Medium 11"
 
 theme.bg_normal     = "#efefef"
 theme.bg_focus      = "#efefef"
@@ -25,7 +25,7 @@ theme.fg_urgent     = "#101010"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(20)
-theme.border_width  = dpi(10)
+theme.border_width  = dpi(0)
 theme.border_normal = "#efefef"
 theme.border_focus  = "#efefef"
 theme.border_marked = "#91231c"
@@ -71,8 +71,8 @@ theme.menu_width  = dpi(150)
 --theme.bg_widget = "#cc0000"
 
 -- Define the image to load
-theme.titlebar_close_button_normal = themes_path.."icons/inac.png"
-theme.titlebar_close_button_focus  = themes_path.."icons/close2.png"
+theme.titlebar_close_button_normal = themes_path.."icons/inacsmall2.png"
+theme.titlebar_close_button_focus  = themes_path.."icons/closesmall.png"
 
 theme.titlebar_ontop_button_normal_inactive = themes_path.."icons/inac.png"
 theme.titlebar_ontop_button_focus_inactive  = themes_path.."icons/ontop.png"
@@ -84,7 +84,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."icons/max.png"
 theme.titlebar_maximized_button_normal_active = themes_path.."icons/inac.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."icons/max.png"
 
-theme.wallpaper = themes_path.."walls/wal4.jpg"
+theme.wallpaper = themes_path.."walls/snowy.png"
 
 -- You can use your own layout icons like this:
 theme.layout_floating  = themes_path.."default/layouts/floatingw.png"
