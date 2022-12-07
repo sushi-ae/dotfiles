@@ -1,0 +1,3 @@
+#echo "welcome back $(tput setaf 6)bloc"
+echo "$(tput setaf 6)snowy $(tput setaf 0)today innit?"
+PS1="$ "
