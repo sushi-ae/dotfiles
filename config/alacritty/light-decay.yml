@@ -1,35 +1,10 @@
-window:
-  
-  title: 'Alacritty'
-
-  opacity: 1
-
-  padding:
-    x: 30
-    y: 20
-
-  dimensions:
-    columns: 40
-    lines: 10
-
-font:
-  normal:
-    family: Iosevka Term Nerd Font
-    style: Medium
-
-  bold:
-    family: Iosevka Term Nerd Font
-    style: Bold
-
-  size: 9.0
-
 colors:
   primary:
-    background: '#fefefe'
-    foreground: '#101010'
+    background: '#dee1e6'
+    foreground: '#101419'
   cursor:
     text:   CellForeground
-    cursor: '#101010'
+    cursor: '#101419'
   normal:
     black:   '#c5c8cd'
     red:     '#bd3c42'
@@ -48,6 +23,3 @@ colors:
     magenta: '#a86cd0'
     cyan:    '#56a0cb'
     white:   '#1f2328'
-
-cursor:
-  style: Beam
