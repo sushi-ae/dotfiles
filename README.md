@@ -1,8 +1,8 @@
 # My Personal Dotfiles.
 ITS MESSY DON'T BULLY ME!!!
 ## current state of the rice
-### snowy.
-![snowy](https://user-images.githubusercontent.com/118438453/206122876-ecd569cb-78ac-45ca-add5-f9ad617f0cf6.png)
+### sky.
+![sky](https://user-images.githubusercontent.com/118438453/207280934-ab19d9c4-5813-4d08-a560-5e6d15a4e345.png)
 
 ## description
 These are my dotfiles that are constantly being updated, unlike "wood." which is a static rice, meaning I won't change it much.
