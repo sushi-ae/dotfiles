@@ -11,7 +11,7 @@ local wibox = require("wibox")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
-local naughty = require("naughty")
+--local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local dpi = beautiful.xresources.apply_dpi
@@ -50,10 +50,12 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. "theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-browser = "firefox"
+browser  = "firefox"
+musica   = "ncmpcpp"
 filemanager = "nemo"
-editor = os.getenv("EDITOR") or "vim"
+editor   = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
+musica_cmd = terminal .. " -o window.dimensions.columns=50 window.dimensions.lines=15 -e " .. musica
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -70,34 +72,28 @@ awful.layout.layouts = {
 -- }}}
 
 -- {{{ Menu
--- Create a launcher widget and a main menu
 myawesomemenu = {
    { "restart", awesome.restart },
    { "quit", function() awesome.quit() end },
 }
 
-shutdown   = "poweroff"
-reboot     = "reboot"
-
-scrot_wait = "sleep 5 && scrot"
-scrot      = "scrot"
-
-powermenu = {
-   { "  shutdown", shutdown },
-   { "  reboot", reboot }
+brightnessmenu = {
+    { "full", 'brightnessctl s 100%' },
+    { "medium", 'brightnessctl s 50%' },
+    { "low", 'brightnessctl s 20%' }
 }
 
-scrot = {
-   { "  5 sec", scrot_wait },
-   { "  full", scrot }
+appsmenu = {
+   { "brightness", brightnessmenu },
+   { "music", musica_cmd },
+   { "wallpaper", 'nitrogen' },
+   { "files", filemanager },
+   { "browser", browser }
 }
 
-mymainmenu = awful.menu({ items = { { "  awesome", myawesomemenu },
-				    --{ "  power", powermenu },
-				    --{ "  scrot", scrot },
-                                    { "  terminal", terminal },
-				    --{ "  files", filemanager },
-				    { "  browser", browser}
+mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu },
+				    { "stuffs", appsmenu },
+                                    { "terminal", terminal },
                                   }
                         })
 
@@ -113,8 +109,14 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock('%I %M')
-mytextclock:set_font("Comfortaa Medium 12")
+local textclock = wibox.widget {
+	{
+		widget = wibox.widget.textclock,
+		format = "%I %M",
+		font   = "Comfortaa 12"
+	},
+	layout = wibox.layout.fixed.horizontal
+}
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -192,155 +194,19 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytaglist = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
-        buttons = taglist_buttons,
-	style   = {
-		shape = gears.shape.rounded_rect
-	},
+        buttons = taglist_buttons
     }
-    -- Systray ig
-    systray = wibox.widget.systray()
     
+    systray = wibox.widget.systray()
+
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist {
         screen  = s,
         filter  = awful.widget.tasklist.filter.currenttags,
-        buttons = tasklist_buttons,
+        buttons = tasklist_buttons
     }
 
-    local wb = awful.wibar { position = "bottom", height = 45, bg = beautiful.bg_focus }
-wb:setup {
-    layout = wibox.layout.align.horizontal,
-    { -- Left Side
-	{
-	    {
-		{
-		    {
-			{
-			    mylauncher,
-			    layout = wibox.layout.fixed.horizontal
-			},
-			bg     = beautiful.bg_normal,
-			shape  = gears.shape.squircle,
-			widget = wibox.container.background
-		    },
-		    margins = 7,
-		    widget  = wibox.container.margin
-		},
-		bg     = beautiful.bg_normal,
-		shape  = gears.shape.rounded_rect,
-		widget = wibox.container.background
-	    },
-	    margins = 5,
-	    widget  = wibox.container.margin
-	},
-	{ -- Center
-	    {
-		{
-		    {
-                        s.mytaglist,
-		        layout = wibox.layout.fixed.horizontal
-		    },
-		    top     = 6,
-		    bottom  = 6,
-		    left    = 10,
-		    right   = 10,
-		    widget  = wibox.container.margin
-	        },
-		shape  = gears.shape.rounded_rect,
-		bg     = beautiful.bg_normal,
-		fg     = beautiful.fg_normal,
-		widget = wibox.container.background
-	    },
-	    top     = 5,
-	    bottom  = 5,
-	    widget  = wibox.container.margin
-	},
-        layout = wibox.layout.fixed.horizontal,
-    },
-    {
-	{
-	    {
-		{
-		    {
-    	                s.mytasklist,
-		        layout = wibox.layout.fixed.horizontal
-		    },
-		    top = 6,
-		    bottom = 6,
-		    left = 14,
-		    right = 6,
-		    widget  = wibox.container.margin
-		},
-		shape  = gears.shape.rounded_rect,
-		bg     = beautiful.bg_normal,
-		widget = wibox.container.background
-	    },
-	    margins = 5,
-	    widget  = wibox.container.margin
-	},
-	halign = "center",
-	layout = wibox.container.place
-    },
-    {
-	{
-	    {
-		{
-		    {
-			systray,
-			layout = wibox.layout.fixed.horizontal
-		    },
-		    margins = 8,
-		    widget  = wibox.container.margin
-		},
-		bg = beautiful.bg_normal,
-		shape = gears.shape.rounded_rect,
-		widget = wibox.container.background
-	    },
-	    top     = 5,
-	    bottom  = 5,
-	    widget  = wibox.container.margin
-	},
-	{ -- Right Side
-	    {
-	        {
-		    {
-			{
-			    {
-				{
-		            	    mytextclock,
-		            	    layout = wibox.layout.fixed.horizontal
-				},
-				left = 7,
-				right = 7,
-				widget = wibox.container.margin
-			    },
-			    bg     = beautiful.textclock_fg,
-			    fg     = beautiful.bg_normal,
-			    shape  = gears.shape.rounded_rect,
-			    widget = wibox.container.background
-			},
-			top    = 3,
-			bottom = 3,
-			left   = 2,
-			right  = 2,
-			widget  = wibox.container.margin
-		    },
-		    top     = 2,
-		    bottom  = 2,
-		    left    = 2,
-		    right   = 2,
-		    widget  = wibox.container.margin
-	        },
-		shape  = gears.shape.rounded_rect,
-	        bg     = beautiful.bg_normal,
-	        widget = wibox.container.background
-	    },
-	    margins = 5,
-	    widget  = wibox.container.margin
-	},
-	layout = wibox.layout.fixed.horizontal
-    },
-}
+--local wb = awful.wibar { position = "top", height = beautiful.bar_height }
 end)
 -- }}}
 
@@ -654,98 +520,72 @@ client.connect_signal("request::titlebars", function(c)
         end)
     )
 
-    awful.titlebar(c, {size = 45, position = "top"}) : setup {
+    awful.titlebar(c, { size = beautiful.titlebar_height }) : setup {
         { -- Left
 	    {
-		{
-			{	
-				{
-					awful.titlebar.widget.iconwidget(c),
-					layout = wibox.layout.fixed.horizontal
-				},
-				margins = 5,	
-				widget  = wibox.container.margin
-			},
-			bg     = beautiful.bg_normal,
-			shape  = gears.shape.rounded_rect,
-			widget = wibox.container.background
-		},
-		top    = 5,
-		bottom = 5,
-		left   = 5,
+		--{
+		    --awful.titlebar.widget.iconwidget(c),
+		    --layout = wibox.layout.fixed.horizontal
+		--},
+		top = 10,
+		left = 15,
+		bottom = 6,
 		widget = wibox.container.margin
 	    },
-            layout  = wibox.layout.fixed.horizontal,
+            buttons = buttons,
+            layout  = wibox.layout.fixed.horizontal
         },
         { -- Middle
 	    {
 		{
 		    {
-			{
-			    {
-				{
-				    {
-			    	        awful.titlebar.widget.titlewidget(c),
-			    	        layout = wibox.layout.align.horizontal
-				    },
-				    top = 3,
-				    bottom = 3,
-				    right = 5,
-				    left  = 5,
-				    widget  = wibox.container.margin
-				},
-				bg  = beautiful.textclock_fg,
-				fg  = beautiful.bg_normal,
-				shape = gears.shape.rounded_rect,
-				widget = wibox.container.background
-			    },
-			    margins = 2,
-			    widget  = wibox.container.margin
-			},
-			left = 2,
-			right = 2,
-			top   = 2,
-			bottom = 2,
-			widget  = wibox.container.margin
+			--{
+		        --    awful.titlebar.widget.iconwidget(c),
+			--    layout = wibox.layout.fixed.horizontal
+			--},
+			right = 5,
+			top   = 4,
+			bottom = 3,
+			widget = wibox.container.margin
 		    },
-		    bg     = beautiful.bg_normal,
-		    fg     = beautiful.textclock_fg,
-		    shape  = gears.shape.rounded_rect,
-		    widget = wibox.container.background
+		    --awful.titlebar.widget.titlewidget(c),
+		    layout = wibox.layout.fixed.horizontal
 		},
-		margins = 5,
+		margins = 6,
 		widget = wibox.container.margin
-            },
-	    halign    = "center",
-	    buttons   = buttons,
-            layout    = wibox.container.place
+	    },
+	    align = "center",
+            buttons = buttons,
+            layout  = wibox.container.place
         },
         { -- Right
-	    nil,
-	    nil,
-	    {	    
+	    {
+		{
 		    {
-		    	{	
-				{
-					awful.titlebar.widget.ontopbutton(c),
-					awful.titlebar.widget.maximizedbutton(c),
-					awful.titlebar.widget.closebutton(c),
-					layout = wibox.layout.fixed.horizontal
-			        },
-				left   = 6,
-				right  = 5,
-				widget = wibox.container.margin
-		    	},
-		    	shape  = gears.shape.rounded_rect,
-		    	bg     = beautiful.bg_normal,
-		    	widget = wibox.container.background,
-	            },
-		    top    = 6,
-		    bottom = 6,
-		    right  = 5,
-		    widget = wibox.container.margin
+		 	{
+			    awful.titlebar.widget.maximizedbutton(c),
+			    layout = wibox.layout.fixed.horizontal
+			},
+			right =  beautiful.titlebar_button_spacing,
+			widget = wibox.container.margin
+		    },
+		    {
+			{
+                            awful.titlebar.widget.ontopbutton(c),
+			    layout = wibox.layout.fixed.horizontal
+			},
+			right = beautiful.titlebar_button_spacing,
+			widget = wibox.container.margin
+		    },
+                    awful.titlebar.widget.closebutton    (c),
+		    layout = wibox.layout.fixed.horizontal
+		},
+		top = 14,
+		right = 9,
+		bottom = 9,
+		widget = wibox.container.margin
 	    },
-            layout = wibox.layout.fixed.horizontal
+            layout = wibox.layout.fixed.horizontal()
         },
         layout = wibox.layout.align.horizontal
     }
@@ -760,10 +600,10 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- Utils
-awful.util.spawn("nm-applet")
-
 -- Autostart
+awful.util.spawn("nm-applet &")
+
+awful.spawn.with_shell("dunst &")
+awful.spawn.with_shell("nitrogen --restore &")
 awful.spawn.with_shell("sxhkd &")
 awful.spawn.with_shell("picom -b &")
-awful.spawn.with_shell("nitrogen --restore &")
