@@ -1,0 +1,149 @@
+Dec 29 18:47 : exception: Failed to open '/home/yes/.mpd/mpdstate': No such file or directory
+Dec 29 18:47 : config: option 'device' on line 13 was not recognized
+Dec 29 18:47 : update: added /Coffee - Jack Stauber.mp3
+Dec 29 18:50 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 18:53 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 18:53 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 18:59 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 19:00 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 19:02 : update: added /Baby Hotline (Extended) - Jack Stauber.mp3
+Dec 29 19:02 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:05 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:06 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 19:09 : player: played "Coffee - Jack Stauber.mp3"
+Dec 29 19:12 : update: removing Coffee - Jack Stauber.mp3
+Dec 29 19:12 : update: removing Baby Hotline (Extended) - Jack Stauber.mp3
+Dec 29 19:12 : update: added Jack Stauber/Who/01. Baby Hotline.mp3
+Dec 29 19:12 : update: added Jack Stauber/Who/02. Coffee.mp3
+Dec 29 19:14 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:14 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:14 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:14 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:14 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:16 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:16 : exception: Bad playlist name
+Dec 29 19:17 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:17 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:17 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:18 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:18 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:18 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:18 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:19 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:20 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:20 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:20 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:20 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:28 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:28 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:28 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:28 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:28 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:30 : update: removing Jack Stauber/Who/02. Coffee.mp3
+Dec 29 19:30 : update: removing Jack Stauber/Who/01. Baby Hotline.mp3
+Dec 29 19:30 : update: added /Baby Hotline.mp3
+Dec 29 19:30 : update: added /Coffee.mp3
+Dec 29 19:31 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:31 : player: played "Coffee.mp3"
+Dec 29 19:31 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:31 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:31 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:31 : exception: Failed to decode /home/yes/Music/Jack Stauber/Who/02. Coffee.mp3; Failed to open '/home/yes/Music/Jack Stauber/Who/02. Coffee.mp3': No such file or directory
+Dec 29 19:31 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:31 : exception: Not playing
+Dec 29 19:31 : exception: Not playing
+Dec 29 19:32 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:32 : player: played "Coffee.mp3"
+Dec 29 19:32 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:32 : exception: Failed to decode /home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3; Failed to open '/home/yes/Music/Baby Hotline (Extended) - Jack Stauber.mp3': No such file or directory
+Dec 29 19:32 : exception: Failed to decode /home/yes/Music/Jack Stauber/Who/02. Coffee.mp3; Failed to open '/home/yes/Music/Jack Stauber/Who/02. Coffee.mp3': No such file or directory
+Dec 29 19:32 : player: played "Baby Hotline (Extended) - Jack Stauber.mp3"
+Dec 29 19:32 : exception: Failed to decode /home/yes/Music/Jack Stauber/Who/02. Coffee.mp3; Failed to open '/home/yes/Music/Jack Stauber/Who/02. Coffee.mp3': No such file or directory
+Dec 29 19:32 : player: played "Jack Stauber/Who/02. Coffee.mp3"
+Dec 29 19:35 : player: played "Coffee.mp3"
+Dec 29 19:36 : player: played "Coffee.mp3"
+Dec 29 19:37 : player: played "Coffee.mp3"
+Dec 29 19:42 : player: played "Coffee.mp3"
+Dec 29 19:43 : zeroconf: No global port, disabling zeroconf
+Dec 29 19:43 : config: option 'device' on line 13 was not recognized
+Dec 29 19:44 : update: removing Baby Hotline.mp3
+Dec 29 19:44 : player: played "Coffee.mp3"
+Dec 29 19:46 : player: played "Coffee.mp3"
+Dec 29 19:47 : update: updating /Coffee.mp3
+Dec 29 19:48 : update: updating /Coffee.mp3
+Dec 29 19:48 : player: played "Coffee.mp3"
+Dec 29 19:49 : player: played "Coffee.mp3"
+Dec 29 19:50 : player: played "Coffee.mp3"
+Dec 29 19:51 : player: played "Coffee.mp3"
+Dec 29 19:52 : update: updating /Coffee.mp3
+Dec 29 19:52 : player: played "Coffee.mp3"
+Dec 29 19:53 : update: updating /Coffee.mp3
+Dec 29 19:53 : player: played "Coffee.mp3"
+Dec 29 19:55 : player: played "Coffee.mp3"
+Dec 29 20:29 : player: played "Coffee.mp3"
+Dec 29 20:30 : player: played "Coffee.mp3"
+Dec 29 20:37 : player: played "Coffee.mp3"
+Dec 29 20:38 : player: played "Coffee.mp3"
+Dec 29 20:39 : player: played "Coffee.mp3"
+Dec 29 20:40 : player: played "Coffee.mp3"
+Dec 29 20:41 : player: played "Coffee.mp3"
+Dec 29 20:42 : player: played "Coffee.mp3"
+Dec 29 20:45 : player: played "Coffee.mp3"
+Dec 29 20:45 : player: played "Coffee.mp3"
+Dec 29 20:46 : player: played "Coffee.mp3"
+Dec 29 20:47 : player: played "Coffee.mp3"
+Dec 29 20:48 : player: played "Coffee.mp3"
+Dec 29 20:50 : player: played "Coffee.mp3"
+Dec 29 20:51 : player: played "Coffee.mp3"
+Dec 29 20:52 : player: played "Coffee.mp3"
+Dec 29 20:53 : player: played "Coffee.mp3"
+Dec 29 20:54 : update: added /Undertale.mp3
+Dec 29 20:55 : update: updating /Coffee.mp3
+Dec 29 20:55 : update: updating /Undertale.mp3
+Dec 30 09:58 : player: played "Coffee.mp3"
+Dec 30 09:59 : player: played "Coffee.mp3"
+Dec 30 10:16 : update: added /Baby I'm Yours.mp3
+Dec 30 10:16 : update: added /Choice.mp3
+Dec 30 10:18 : update: updating /Baby I'm Yours.mp3
+Dec 30 10:18 : update: updating /Coffee.mp3
+Dec 30 10:18 : update: updating /Undertale.mp3
+Dec 30 10:18 : update: updating /Choice.mp3
+Dec 30 10:26 : player: played "Coffee.mp3"
+Dec 30 10:33 : player: played "Undertale.mp3"
+Dec 30 10:37 : player: played "Choice.mp3"
+Dec 30 10:38 : player: played "Coffee.mp3"
+Dec 30 11:56 : player: played "Undertale.mp3"
+Dec 30 11:56 : zeroconf: No global port, disabling zeroconf
+Dec 30 11:56 : config: option 'device' on line 13 was not recognized
+Dec 30 12:51 : player: played "Coffee.mp3"
+Dec 30 13:13 : zeroconf: No global port, disabling zeroconf
+Dec 30 13:13 : config: option 'device' on line 13 was not recognized
+Dec 30 13:18 : update: updating /Baby I'm Yours.mp3
+Dec 30 13:18 : update: updating /Coffee.mp3
+Dec 30 13:18 : update: updating /Undertale.mp3
+Dec 30 13:18 : update: updating /Choice.mp3
+Dec 30 13:19 : player: played "Baby I'm Yours.mp3"
+Dec 30 13:20 : player: played "Coffee.mp3"
+Dec 30 13:31 : player: played "Coffee.mp3"
+Dec 30 14:23 : player: played "Choice.mp3"
+Dec 30 14:33 : player: played "Choice.mp3"
+Dec 30 14:34 : zeroconf: No global port, disabling zeroconf
+Dec 30 14:34 : config: option 'device' on line 13 was not recognized
+                                                   Dec 30 17:49 : zeroconf: No global port, disabling zeroconf
+Dec 30 17:49 : config: option 'device' on line 13 was not recognized
+Dec 30 17:50 : zeroconf: No global port, disabling zeroconf
+Dec 30 17:50 : config: option 'device' on line 13 was not recognized
+Dec 30 18:09 : player: played "Undertale.mp3"
+Dec 30 18:46 : zeroconf: No global port, disabling zeroconf
+Dec 30 18:46 : config: option 'device' on line 13 was not recognized
+Dec 30 18:57 : player: played "Undertale.mp3"
+Dec 30 21:50 : zeroconf: No global port, disabling zeroconf
+Dec 30 21:50 : config: option 'device' on line 13 was not recognized
+Dec 31 14:05 : player: played "Choice.mp3"
+Dec 31 14:48 : zeroconf: No global port, disabling zeroconf
+Dec 31 14:48 : config: option 'device' on line 13 was not recognized
+Jan 02 12:37 : zeroconf: No global port, disabling zeroconf
+Jan 02 12:37 : config: option 'device' on line 13 was not recognized
+Jan 02 12:38 : player: played "Choice.mp3"
+Jan 02 14:44 : zeroconf: No global port, disabling zeroconf
+Jan 02 14:44 : config: option 'device' on line 13 was not recognized
