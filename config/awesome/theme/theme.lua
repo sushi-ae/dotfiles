@@ -23,22 +23,22 @@ theme.taglist_bg_focus  = "#ffffff"
 theme.taglist_fg_normal = "#dddddd"
 theme.taglist_fg_focus  = "#999999"
 
-theme.titlebar_bg_focus = "#ffffff"
-theme.titlebar_bg_normal = "#ffffff"
+theme.titlebar_bg_focus = "#101010"
+theme.titlebar_bg_normal = "#101010"
 
 -- Main Colors
-theme.bg_normal     = "#ffffff"
-theme.bg_focus      = "#efefef"
-theme.bg_urgent     = "#ffffff"
-theme.bg_minimize   = "#efefef"
+theme.bg_normal     = "#101010"
+theme.bg_focus      = "#161616"
+theme.bg_urgent     = "#101010"
+theme.bg_minimize   = "#161616"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#101010"
-theme.fg_focus      = "#101010"
-theme.fg_urgent     = "#101010"
-theme.fg_minimize   = "#101010"
+theme.fg_normal     = "#ffffff"
+theme.fg_focus      = "#ffffff"
+theme.fg_urgent     = "#ffffff"
+theme.fg_minimize   = "#ffffff"
 
-theme.useless_gap   = dpi(20)
+theme.useless_gap   = dpi(5)
 theme.border_width  = dpi(0)
 theme.border_normal = "#efefef"
 theme.border_focus  = "#ffffff"

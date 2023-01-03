@@ -24,11 +24,11 @@ font:
 
 colors:
   primary:
-    background: '#ffffff'
-    foreground: '#101010'
+    background: '#101010'
+    foreground: '#ffffff'
   cursor:
     text:   CellForeground
-    cursor: '#101010'
+    cursor: '#ffffff'
   bright:
     black:   '#101010'
     red:     '#fc7b81'
@@ -39,14 +39,14 @@ colors:
     cyan:    '#90daff'
     white:   '#101010'
   normal:
-    black:   '#fefefe'
+    black:   '#161616'
     red:     '#e05f65'
     green:   '#78dba9'
     yellow:  '#f1cf8a'
     blue:    '#70a5eb'
     magenta: '#c68aee'
     cyan:    '#74bee9'
-    white:   '#101010'
+    white:   '#ffffff'
 
 cursor:
   style: Beam

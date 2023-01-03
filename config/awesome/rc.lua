@@ -603,6 +603,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- Autostart
 awful.util.spawn("nm-applet &")
 
+awful.spawn.with_shell("runpolybar &")
 awful.spawn.with_shell("dunst &")
 awful.spawn.with_shell("nitrogen --restore &")
 awful.spawn.with_shell("sxhkd &")
