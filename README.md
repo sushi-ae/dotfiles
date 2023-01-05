@@ -11,8 +11,9 @@ But these are the dotfiles that I am going to be changing on a regular basis.
 ## some information
 | Info      |    =    |
 | --------- | ------- |
-| wm        | awesomewm |
+| wm        | awesome-git |
 | distro    | archlinux |
+| music     | mpd + ncmpcpp |
 | font      | iosevka  |
 | terminal  | alacritty |
 | colorscheme| light-decay |
