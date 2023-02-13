@@ -1,0 +1,43 @@
+st.font: Iosevka Nerd Font:pixelsize=14:antialias=true
+
+urxvt.font: Iosevka N
+
+st.borderpx: 20
+
+! special
+*.foreground:   #0d0d0d
+*.background:   #ffffff
+*.cursorColor:  #0d0d0d
+
+! black
+*.color0:       #ffffff
+*.color8:       #efefef
+
+! red
+*.color1:       #fe6055
+*.color9:       #fe6055
+
+! green
+*.color2:       #22c93e
+*.color10:      #22c93e
+
+! yellow
+*.color3:       #febe29
+*.color11:      #febe29
+
+! blue
+*.color4:       #3051bc
+*.color12:      #3051bc
+
+! magenta
+*.color5:       #FE50E8
+*.color13:      #FE50E8
+
+! cyan
+*.color6:       #55cbfe
+*.color14:      #55cbfe
+
+! white
+*.color7:       #0d0d0d
+*.color15:      #0d0d0d
+
