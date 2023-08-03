@@ -1,10 +1,8 @@
 window:
   opacity: 1
 
-  title: terminal
-
   padding:
-    x: 40
+    x: 20
     y: 20
 
   dimensions:
@@ -13,40 +11,42 @@ window:
 
 font:
   normal:
-    family: Iosevka Nerd Font
+    family: cozette
     style: Medium
 
   bold:
-    family: Iosevka Nerd Font
+    family: cozette
     style: Bold
 
-  size: 9.0
+size: 600000
 
 colors:
   primary:
-    background: '#101010'
-    foreground: '#ffffff'
+    background: '#121212'
+    foreground: '#fefefe'
   cursor:
     text:   CellForeground
-    cursor: '#ffffff'
+    cursor: '#fefefe'
+  
   bright:
-    black:   '#101010'
-    red:     '#fc7b81'
-    green:   '#94f7c5'
-    yellow:  '#ffeba6'
-    blue:    '#8cc1ff'
-    magenta: '#e2a6ff'
-    cyan:    '#90daff'
-    white:   '#101010'
+    black:   '#151515'
+    red:     '#dd6777'
+    green:   '#90ceaa'
+    yellow:  '#ecd3a0'
+    blue:    '#86aaec'
+    magenta: '#c296eb'
+    cyan:    '#93cee9'
+    white:   '#cbced3'
   normal:
-    black:   '#161616'
-    red:     '#e05f65'
-    green:   '#78dba9'
-    yellow:  '#f1cf8a'
-    blue:    '#70a5eb'
-    magenta: '#c68aee'
-    cyan:    '#74bee9'
-    white:   '#ffffff'
+    black:   '#252525'
+    red:     '#e26c7c'
+    green:   '#95d3af'
+    yellow:  '#f1d8a5'
+    blue:    '#8baff1'
+    magenta: '#c79bf0'
+    cyan:    '#98d3ee'
+    white:   '#d0d3d8'
+
 
 cursor:
   style: Beam
