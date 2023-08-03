@@ -15,8 +15,8 @@ client.connect_signal('request::default_keybindings', function()
          end,
       },
       awful.key{
-         modifiers   = {mod.super, mod.shift},
-         key         = 'c',
+         modifiers   = {mod.super},
+         key         = 'q',
          description = 'close',
          group       = 'client',
          on_press    = function(c) c:kill() end,
@@ -91,7 +91,7 @@ client.connect_signal('request::default_keybindings', function()
 	 key = 'c',
 	 description = 'screenshot',
 	 group = 'client',
-	 on_press = function() awful.spawn('flameshot gui') end,
+	 on_press = function() awful.spawn.with_shell('flameshot gui') end,
       },
    }
 end)

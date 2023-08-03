@@ -3,7 +3,13 @@ local _M = {}
 local awful = require'awful'
 local hotkeys_popup = require'awful.hotkeys_popup'
 local beautiful = require'beautiful'
+local dpi = beautiful.xresources.apply_dpi
 local wibox = require'wibox'
+
+local gears = require'gears'
+
+-- cairo (whatever this is)
+local cairo = require("lgi").cairo
 
 local apps = require'config.apps'
 local mod = require'bindings.mod'
@@ -18,6 +24,8 @@ _M.mainmenu = awful.menu{
       {'awesome', _M.awesomemenu},
       {'files', apps.files},
       {'browser', apps.browser},
+      {'', wibox.widget.separator},
+      {'wallpaper', apps.nitrogen},
       {'terminal', apps.terminal}
    }
 }
@@ -27,8 +35,21 @@ _M.launcher = awful.widget.launcher{
    menu = _M.mainmenu
 }
 
-_M.keyboardlayout = awful.widget.keyboardlayout()
-_M.textclock      = wibox.widget.textclock('%I:%M')
+_M.cloc = wibox.widget {
+    {
+        format = '%I:%M PST',
+        widget = wibox.widget.textclock
+    },
+    bg = beautiful.bg_normal,
+    fg = beautiful.fg_focus,
+    widget = wibox.container.background
+}
+
+_M.sushi = wibox.widget {
+    image = beautiful.sushi_img,
+    resize = true,
+    widget = wibox.widget.imagebox
+}
 
 
 function _M.create_promptbox() return awful.widget.prompt() end
@@ -140,7 +161,35 @@ function _M.create_tasklist(s)
 end
 
 function _M.create_wibox(s)
+    local wb = awful.wibar { 
+        position = beautiful.bar_pos,
+        height = beautiful.bar_height,
+        width = dpi(105),
+        margins = { right = dpi(1320), bottom = dpi(10) }, 
+    }
 
+    wb:setup {
+        layout = wibox.layout.align.horizontal,
+        {
+            {
+                {
+                    _M.launcher,
+                    shape = function(cr,width,height)
+                        gears.shape.rounded_rect(cr,width,height,2)
+                    end,
+                    widget = wibox.container.background
+                },
+                margins = dpi(7),
+                widget = wibox.container.margin
+            },
+	        {
+                _M.cloc,
+		        margins = {top = dpi(1), left = dpi(3)},
+		        widget = wibox.container.margin
+            },
+            layout = wibox.layout.fixed.horizontal,
+        },
+    }
 end
 
 return _M

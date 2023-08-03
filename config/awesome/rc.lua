@@ -15,7 +15,10 @@ pcall(require, 'luarocks.loader')
 -------------
 local beautiful = require'beautiful'
 local gears = require'gears'
-beautiful.init(gears.filesystem.get_configuration_dir() .. 'theme/theme.lua')
+
+local themeName = 'theme/darktheme.lua'
+
+beautiful.init(gears.filesystem.get_configuration_dir() .. themeName)
 
 -------------------
 -- bindings lmao --
@@ -38,3 +41,4 @@ require'signals'
 awful.spawn.with_shell("xrdb merge ~/.Xresources")
 awful.spawn.with_shell("nitrogen --restore &")
 awful.spawn.with_shell("picom -b &")
+--awful.spawn.with_shell("nemo-desktop &")

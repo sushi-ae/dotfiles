@@ -34,43 +34,50 @@ client.connect_signal('request::titlebars', function(c)
    top_titlebar:setup {
       -- left
       {
-	 {
 	     {
-		 {awful.titlebar.widget.closebutton(c), left = 0, widget = margin},
-		 {awful.titlebar.widget.ontopbutton(c), left = 4, widget = margin},
-		 {awful.titlebar.widget.maximizedbutton(c), left = 4, widget = margin},
-		 layout = wibox.layout.align.horizontal
-	     },
-	     margins = 16.2,
+	     --{
+		 --{awful.titlebar.widget.closebutton(c), left = 0, widget = margin},
+		 --{awful.titlebar.widget.maximizedbutton(c), top = 4, widget = margin},
+		 --layout = wibox.layout.align.vertical
+	     --},
+         {
+             {
+                align = 'center',
+                widget = awful.titlebar.widget.titlewidget(c)
+             },
+             direction = 'north',
+             widget = wibox.container.rotate
+         },
+	     margins = 10,
 	     widget = margin
-	 },
+	    },
          --buttons = buttons,
-         layout  = wibox.layout.fixed.horizontal(),
+         layout  = wibox.layout.flex.horizontal(),
       },
       -- middle
       {
          -- title
          {
-	    --{
+	        --{
             	--align = 'center',
             	--widget = awful.titlebar.widget.titlewidget(c),
             --},
-	    top = dpi(3),
-	    widget = wibox.container.margin
+	        bottom = dpi(3),
+	        widget = wibox.container.margin
          },
          buttons = buttons,
          layout  = wibox.layout.flex.horizontal,
       },
       -- right
       {
-	 {
-	     {
-		 --awful.titlebar.widget.iconwidget(c),
-	         layout = wibox.layout.fixed.horizontal
-	     },
-	     margins = dpi(10),
-	     widget = margin
-	 },
+	 --{
+	     --{
+		 --    awful.titlebar.widget.iconwidget(c),
+	     --    layout = wibox.layout.fixed.horizontal
+	     --},
+	     --margins = dpi(12),
+	     --widget = margin
+	 --},
 	 buttons = buttons,
          layout = wibox.layout.fixed.horizontal()
       },
