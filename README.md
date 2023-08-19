@@ -1,3 +1,6 @@
+> **Warning**
+don't use these if you wanna be safe :sob:
+
 <div align="center">
 <h1>My Personal Dotfiles.</h1>
 ITS MESSY DON'T BULLY ME!!!<br>
