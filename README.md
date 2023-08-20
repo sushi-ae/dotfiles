@@ -1,5 +1,5 @@
 > **Warning**
-don't use these if you wanna be safe :sob:
+don't use these if you like <br> user friendly experiences :sob:
 
 <div align="center">
 <h1>My Personal Dotfiles.</h1>
