@@ -5,8 +5,8 @@ don't use these if you wanna be safe :sob:
 <h1>My Personal Dotfiles.</h1>
 ITS MESSY DON'T BULLY ME!!!<br>
 <h2> current state of the rice </h2>
-<h3> sushi </h3>
-<img src="https://github.com/frapdotbmp/dotfiles/assets/118438453/8f87d431-0057-4ded-bb09-4ee4d27232d5"/>
+<h3> " caca " </h3>
+<img src="https://github.com/frapdotbmp/dotfiles/assets/118438453/80f014ee-4348-4c33-a950-05f42d31d75b"/>
 
 
 ## description
@@ -17,12 +17,12 @@ But these are the dotfiles that I am going to be changing on a regular basis.
 | Info      |    =    |
 | --------- | ------- |
 | wm        | awesome-git |
-| distro    | archlinux |
+| distro    | debian |
 | music     | mpd + ncmpcpp |
-| font      | iosevka  |
+| font      | victor mono italic  |
 | terminal  | alacritty |
-| colorscheme| light-decay |
-| gtk-theme | whitesur-light |
-| icon-theme | vimix |
-| key-daemon| sxhkd |
+| colorscheme| sushi (my own) |
+| gtk-theme | n/a |
+| icon-theme | nineicons |
+| key-daemon| n/a |
 </div>
