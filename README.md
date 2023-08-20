@@ -3,17 +3,20 @@ don't use these if you like <br> user friendly experiences :sob:
 
 <h1>My Personal Dotfiles.</h1>
 ITS MESSY DON'T BULLY ME!!!<br>
-<h2> current state of the rice </h2>
-<h3> " caca " </h3>
+<br>
+<details>
+<summary><b> current state </b></summary>
+<br>
 <img src="https://github.com/frapdotbmp/dotfiles/assets/118438453/80f014ee-4348-4c33-a950-05f42d31d75b"/>
-
+</details>
 
 ## description
-These are my dotfiles that are constantly being updated, unlike "wood." which is a static rice, meaning I won't change it much.
-But these are the dotfiles that I am going to be changing on a regular basis.
+these are my configuration files for my setup <br>
+note that these are my personal dotfiles, so <br>
+some things may not work for you.
 
 ## some information
-| Info      |    =    |
+| info      |    =    |
 | --------- | ------- |
 | wm        | awesome-git |
 | distro    | debian |
