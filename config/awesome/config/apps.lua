@@ -1,9 +1,9 @@
 local _M = {
    terminal    = os.getenv('TERMINAL') or 'alacritty',
    editor      = os.getenv('EDITOR')   or 'vim',
-   browser     = 'chromium',
+   browser     = 'firefox',
    nitrogen    = 'nitrogen',
-   files       = 'nemo'
+   files       = 'pcmanfm'
 }
 
 _M.editor_cmd = _M.terminal .. ' -e ' .. _M.editor

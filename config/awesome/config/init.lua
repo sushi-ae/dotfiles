@@ -1,4 +1,5 @@
 return {
    apps = require'config.apps',
-   vars = require'config.vars',
+   helpers = require'config.helpers',
+   signals = require'config.signals'
 }

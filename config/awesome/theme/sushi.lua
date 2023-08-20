@@ -23,13 +23,15 @@ theme.titlebar_pos = "bottom"
 theme.sushi_img = themes_path.."icons/sussy.png"
 
 theme.bar_height = dpi(40)
-theme.bar_pos = "bottom"
+theme.bar_pos = "top"
 
 -- Specific Colors
 theme.titlebar_bg_normal = "#1d2426"
 theme.titlebar_bg_focus = "#1F272A"
 
 theme.titlebar_fg_focus = "#f2f2f2"
+
+theme.tasklist_bg_focus = "1d2426"
 
 theme.bg_icon = "#f2f2f2"
 theme.fg_icon = "#232b2e"

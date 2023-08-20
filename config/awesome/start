@@ -1,0 +1,11 @@
+# autostart
+
+pkill picom
+pkill dunst
+pkill flameshot
+pkill nm-applet
+
+nitrogen --restore &
+picom &
+dunst &
+nm-applet &

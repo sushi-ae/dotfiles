@@ -1,4 +1,6 @@
 window:
+  title: alacritty
+
   opacity: 1
 
   padding:
@@ -11,42 +13,42 @@ window:
 
 font:
   normal:
-    family: cozette
-    style: Medium
+    family: Victor Mono
+    style: Italic
 
   bold:
-    family: cozette
-    style: Bold
-
-size: 600000
+    family: Victor Mono
+    style: Semibold Italic
+  
+  size: 7
 
 colors:
   primary:
     background: '#121212'
-    foreground: '#fefefe'
+    foreground: '#fafafa'
   cursor:
     text:   CellForeground
-    cursor: '#fefefe'
+    cursor: '#fafafa'
   
+  normal:
+    black:   '#151515'
+    red:     '#f45a00'
+    green:   '#86b300'
+    yellow:  '#f49800'
+    blue:    '#399ee6'
+    magenta: '#f07171'
+    cyan:    '#55b4d4'
+    white:   '#fafafa'
+
   bright:
     black:   '#151515'
-    red:     '#dd6777'
-    green:   '#90ceaa'
-    yellow:  '#ecd3a0'
-    blue:    '#86aaec'
-    magenta: '#c296eb'
-    cyan:    '#93cee9'
-    white:   '#cbced3'
-  normal:
-    black:   '#252525'
-    red:     '#e26c7c'
-    green:   '#95d3af'
-    yellow:  '#f1d8a5'
-    blue:    '#8baff1'
-    magenta: '#c79bf0'
-    cyan:    '#98d3ee'
-    white:   '#d0d3d8'
-
+    red:     '#f45a00'
+    green:   '#86b300'
+    yellow:  '#f49800'
+    blue:    '#399ee6'
+    magenta: '#f07171'
+    cyan:    '#55b4d4'
+    white:   '#fafafa'
 
 cursor:
   style: Beam
