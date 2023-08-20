@@ -1,7 +1,6 @@
 > **Warning**
 don't use these if you like <br> user friendly experiences :sob:
 
-<div align="center">
 <h1>My Personal Dotfiles.</h1>
 ITS MESSY DON'T BULLY ME!!!<br>
 <h2> current state of the rice </h2>
@@ -25,4 +24,3 @@ But these are the dotfiles that I am going to be changing on a regular basis.
 | gtk-theme | n/a |
 | icon-theme | nineicons |
 | key-daemon| n/a |
-</div>
