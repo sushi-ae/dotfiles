@@ -1,7 +1,7 @@
 > **Warning**
 don't use these if you like <br> user friendly experiences :sob:
 
-<h1>My Personal Dotfiles.</h1>
+<h1>my dots yes</h1>
 ITS MESSY DON'T BULLY ME!!!<br>
 <br>
 <details>
