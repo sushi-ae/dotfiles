@@ -1,5 +1,5 @@
 > **Warning**
-don't use these if you like <br> user friendly experiences :sob:
+please don't actually USE these dotfiles :sob:
 
 <h1>my dots yes</h1>
 ITS MESSY DON'T BULLY ME!!!<br>
