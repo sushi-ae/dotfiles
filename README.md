@@ -1,5 +1,3 @@
-# My Personal Dotfiles.
-ITS MESSY DON'T BULLY ME!!!
 ## current state of the rice
 ### some pole.
 ![some_pole](https://user-images.githubusercontent.com/118438453/210382415-bbd424c0-0815-46e1-b759-42daa47ca997.png)
